@@ -64,7 +64,8 @@ module OmniAuth
         @raw_info ||= begin
           params = {
             'method' => 'users.getCurrentUser',
-            'application_key' => options.public_key
+            'application_key' => options.public_key,
+            'fields' => options.fields
           }
           params['sig'] = calculate_signature(params)
           result = access_token.get('http://api.odnoklassniki.ru/fb.do', :params => params).parsed
