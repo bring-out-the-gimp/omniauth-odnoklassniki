@@ -28,7 +28,7 @@ module OmniAuth
           :name => raw_info['name'],
           :first_name => raw_info['first_name'],
           :last_name => raw_info['last_name'],
-          :image => raw_info['pic_1'],
+          :image => raw_info['pic_5'],
           :urls => {
             'Odnoklassniki' => "http://www.odnoklassniki.ru/profile/#{uid}",
           }
